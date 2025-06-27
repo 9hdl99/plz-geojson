@@ -1,0 +1,35 @@
+https://overpass-turbo.eu
+
+[out:json][timeout:60];
+(
+  area["ISO3166-1"="DE"][admin_level=2];
+)->.searchArea;
+(
+  rel["postal_code"="95173"]["boundary"="postal_code"](area.searchArea);
+  rel["postal_code"="95168"]["boundary"="postal_code"](area.searchArea);
+  rel["postal_code"="95199"]["boundary"="postal_code"](area.searchArea);
+  rel["postal_code"="95158"]["boundary"="postal_code"](area.searchArea);
+  rel["postal_code"="95691"]["boundary"="postal_code"](area.searchArea);
+  rel["postal_code"="95186"]["boundary"="postal_code"](area.searchArea);
+  rel["postal_code"="95111"]["boundary"="postal_code"](area.searchArea);
+  rel["postal_code"="95615"]["boundary"="postal_code"](area.searchArea);
+  rel["postal_code"="95632"]["boundary"="postal_code"](area.searchArea);
+  rel["postal_code"="95707"]["boundary"="postal_code"](area.searchArea);
+  rel["postal_code"="95100"]["boundary"="postal_code"](area.searchArea);
+  rel["postal_code"="95030"]["boundary"="postal_code"](area.searchArea);
+  rel["postal_code"="95032"]["boundary"="postal_code"](area.searchArea);
+  rel["postal_code"="95176"]["boundary"="postal_code"](area.searchArea);
+  rel["postal_code"="95145"]["boundary"="postal_code"](area.searchArea);
+  rel["postal_code"="95028"]["boundary"="postal_code"](area.searchArea);
+  rel["postal_code"="95126"]["boundary"="postal_code"](area.searchArea);
+  rel["postal_code"="95163"]["boundary"="postal_code"](area.searchArea);
+  rel["postal_code"="95195"]["boundary"="postal_code"](area.searchArea);
+  rel["postal_code"="95659"]["boundary"="postal_code"](area.searchArea);
+  rel["postal_code"="95182"]["boundary"="postal_code"](area.searchArea);
+  rel["postal_code"="95706"]["boundary"="postal_code"](area.searchArea);
+  rel["postal_code"="08626"]["boundary"="postal_code"](area.searchArea);
+  rel["postal_code"="08648"]["boundary"="postal_code"](area.searchArea);
+  rel["postal_code"="08645"]["boundary"="postal_code"](area.searchArea);
+  rel["postal_code"="95680"]["boundary"="postal_code"](area.searchArea);
+);
+out geom;
